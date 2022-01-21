@@ -15,6 +15,9 @@ else:
 	# Verbose desativado (saida limpa)
 	conf.verb = 0
 	print ("\n PORT SCANNER - SCAPY \n")
+	
+	# Soma +1 para fecha o range definido no arg 3
+	sys.argv[3]=int(sys.argv[3])+1
 
 	# Laço de repetiçao para criar o range da porta inicial-final. Converte os args em inteiros.
 	for portas in range(int(sys.argv[2]),int(sys.argv[3])):
